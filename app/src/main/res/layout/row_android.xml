@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/kitkat" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageIv"
+            android:text="Title"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/apiLevelTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="3dp"
+            android:text="Api Level 19"
+            android:textColor="#000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTv"
+            android:layout_toEndOf="@id/imageIv"
+            android:text="The Description"
+            android:textColor="#000" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
